@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css reader</title>
+
+   <!-- css start here of hole code -->
+    <style type="text/css">
+        nav {
+            box-shadow: 2px 7px 4px solid dark;
+            position: fixed;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            transition-delay: .8s linear;
+        }
+        .dropdown-menu a {
+            text-decoration: none;
+            list-style: none;
+            color: rgb(58, 52, 52);
+            font-size: 14px;
+            padding: 4px 20px;
+            padding-right: 26px;
+            font-family: Spartan, Roboto, sans-serif;
+            font-weight: 100;
+            letter-spacing: -.03em;
+            text-align: justify;
+            transition: .8s;
+        }
+
+        .dropdown-menu a:hover.nav-link {
+            color: red;
+        }
+
+        .dropdown-menu {
+            width: 300px;
+            height: 150px;
+        }
+
+        nav {
+            position: fixed;
+        }
+
+        .col-lg-2 a span:hover {
+            color: red;
+        }
+
+        .col-lg-2 a {
+            text-decoration: none;
+            list-style: none;
+            color: rgb(58, 52, 52);
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+
+        .menu li a span:hover {
+            color: red;
+        }
+
+        .dropdown button b:hover {
+            color: red;
+        }
+
+        .navbar-nav li .nav-item a b:hover {
+            color: red;
+            transition: .8s;
+        }
+
+        .fill {
+            margin: 0mm;
+            padding: 0mm;
+        }
+        .box1{
+        width: 80%;
+        height: 400px;
+        transition: 30%;
+        margin-top: 50px;
+        margin-left: 200px;
+        
+    }
+    .m1{
+        width: 750px;
+        height: 400px;
+        background-image:url("img3.png");
+        background-size: cover;
+        float: left;
+       
+    }
+    .m2{
+        width: 400px;
+        height: 200px;
+        background-image: url("img4.png");
+        background-size: cover;
+        float: left;
+    }
+    .m3{
+        width: 400px;
+        height: 200px;
+        background-image: url("img6.png");
+        float: left;
+    }
+    .box1 a .m1  h2{
+        color: white;
+        text-align:justify;
+        margin-top: 300px;
+        margin-left: 20px;
+    }
+    .box1 a .m2  h2{
+        color: white;
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+    .box1 a .m3  h2{
+        color: white;
+        margin-top: 100px;
+        margin-left: 20px;
+  
+    }
+    </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- for using navbar .i am using bootstrap framework for coding  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-4 ">
+        <a href="" class="navbar-brand" style="font-weight: bolder; font-size: 40px;">CSS READER
+        </a>
+        <ul class="navbar-nav mx-auto">
+            <div class="dropdown">
+                <button class="btn btn-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <b>EDITORIALS</b> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+                <ul class="dropdown-menu menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="nav-link nitish" href=""><span>Down Editorials & Opinion</span></a></li>
+                    <li><a class="nav-link" href=""><span>Down Editorial & with meaning and Transalation</span></a></li>
+                    <li><a class="nav-link" href=""><span>The News Editorial with Meaning And translation</span></a>
+                    </li>
+                </ul>
+            </div>
+            </li>
+            <div class="dropdown">
+                <button class="btn btn-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <b>MAGAZINES</b> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="" href="#">The Economist</a></li>
+
+                </ul>
+            </div>
+            <li class="nav-item"><a href="" class="nav-link text-dark"><b>DAWN NEWSPAPER</b> </a></li>
+            <li class="nav-item"><a href="" class="nav-link text-dark"><b>DAWN VOCABULARY</b></a></li>
+            <li class="nav-item"><a href="" class="nav-link text-dark "><b>CURRENT AFFAIRS</b></a></li>
+            <li class="nav-item"><a href="" class="nav-link text-dark"><b>NEED ANYTHING</b></a></li>
+        </ul>
+    </nav>
+
+    <!-- navbar end and homepage start -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-11 mx-auto" style="margin-right: 0px; float: left;">
+                <div class="row">
+                    <div class="col-lg-2 ">
+                        <a href=""><img src="img1.jpg" alt="" height="120px" width="250px"></a>
+                        <a href=""> <span>THE NEWS EDITORIAL AND<br>OPINION PDF|25 APRIL 2021</a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href=""><img src="img2.png" alt="" height="120px" width="250px"></a>
+                        <a href=""><span>CSS ALL BOOKS VIDEO LECTURES</span></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href=""><img src="img3.png" height="120px" width="250px" alt=""></a>
+                        <a href=""><span>THE NEWS EDITORIAL AND OPINION 23 FEBUARY 2021</span></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href=""><img src="img4.png" height="120px" width="250px" alt=""></a>
+                        <a href=""><span>CURRENT NATIONAL AFFAIRS <br>23 FEBRUARY 2021</span></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href=""><img src="img5.png" alt="" height="120px" width="250px"></a>
+                        <a href=""><span>DAWN EDITORIAL WITH MEANING AND TRANSLATION 22 FEBRUARY 2021</span></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href=""><img src="img7.jpg" alt="" height="120px" width="250px"></a>
+                        <a href=""><span>DAWN VOCABULARY PDF |27 APRIL 2021</span></a>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    
+    <div class ="box1">
+        <a href="">
+            <div class="m1">
+                <h2>The News Editorial And Opinion 22 Februay <br>2021</h2>
+             </div>
+        </a>
+        <a href="">
+            <div class="m2">
+                <h2>Current NAtional And <br>international Affairs 22 <br>February 2021</h2>
+            </div>
+        </a>
+        <a href="">
+            <div class="m3">
+                <h2>Down Vocabulary 21 February 2021</h2>
+            </div>
+        </a>
+    </div>
+
+<div class="col-lg-10 mx-auto">
+    <div class="row">
+        <div class="col-lg-3">
+    <form action="">
+        <div class="form-group form-inline mt-5">
+            <input type="text" placeholder="Search" class="form-control">
+            <input type="submit" class="btn btn-danger">
+        </div>
+        <br>
+        <h4>I WANT TO GET DAILY UPDATES?</h4>
+        <hr>
+    </form>
+        </div>
+        <div class="col-lg-8 ms-5">
+            <h2 class="text-center mt-3">MORE STORIES</h2>
+            <hr>
+            <br>
+            <a href=""><img src="img7.png" alt="" width="400px" height="200px">
+           <h4>Dawn Editorial with Meaning And <br>Translation 21 February 2021</h4>
+            </a>
+          
+            <a href=""><img src="img9.png" class="mt-5" alt="" width="400px" height="200px">
+           <h4>The Economist Magazine 20 Feb</h4>
+            </a>
+            <div class="conatiner">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                
+                        <a href=""><img src="img10.png" class="mt-5" alt="" width="400px" height="200px">
+                            <h4>Dawn HD Newspaper 20 February 2021</h4>
+                             </a>
+                            </div>
+                            <div class="col-lg-6">
+                                
+                        <a href=""><img src="img5.png" class="mt-5" alt="" width="400px" height="200px">
+                            <h4>Dawn Vocabulary 20 February 2021</h4>
+                             </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                
+                        <a href=""><img src="img7.png" class="mt-5" alt="" width="400px" height="200px">
+                            <h4>Dawn Editorial with Meaning And Translation 20 February 2021</h4>
+                             </a>
+                            </div>
+                            <div class="col-lg-6">
+                                
+                        <a href=""><img src="img11.png" class="mt-5" alt="" width="400px" height="200px">
+                            <h4>Dawn Editorial And Opinion 20 February 2021</h4>
+                             </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6">
+                             </a>
+                            </div>
+                            <div class="col-lg-6">
+                        <a href=""><img src="img3.png" class="mt-5" alt="" width="400px" height="200px">
+                            <h4>The News Editorial And Opinion 20 February 2021</h4>
+                             </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="">
+                                    <h4>Dawn HD Newspaper 19 February 2021</h4>
+                                     </a>
+                             </a>
+                            </div>
+                            <div class="col-lg-6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn btn-danger text-center text-white btn-outline-success w-100 mt-5">LOAD MORE</a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid p-4 mt-5" style="background-color: rgb(26, 24, 24);">
+
+</div>
+<br>
+<br>
+<div class="footer">
+<div class="calender">
+
+</div>
+
+<div class="calender">
+
+</div>
+<div class="calender">
+
+</div>
+<hr>
+<div class="fz">
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="navbar-brand ms-5">  Copyright 2021:-----</div>
+    <ul class="navbar-nav mx-auto">
+     <li class="nav-item"><a href="" class="nav-link float-end text-white">Home</a></li>
+     <li class="nav-item"><a href="" class="nav-link text-white">About</a></li>
+     <li class="nav-item"><a href="" class="nav-link text-white">Contact us</a></li>
+     <li class="nav-item"><a href="" class="nav-link text-white">Privicy Policy</a></li>
+     
+    </ul>
+
+</nav>
+</div>
+<hr>
+
+<style>
+    .ms-5 a{
+        text-decoration: none;
+        color:black;
+    }
+    .ms-5 a:hover{
+    
+        color:red;
+      transition: .5s;
+      
+    }
+    .footer{
+        background-image:url("blue-green-gradient-linear-1920x1080-c2-191970-3cb371-a-15-f-14.png");
+        width: 100%;
+        height: 700px;
+    }
+    .calender{
+        background-color: black;
+        width: 20%;
+        height: 400px;
+        margin-left:50px;
+        float: left;
+    }
+    .fz{
+        float: left;
+    }
+    
+    
+</style>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
